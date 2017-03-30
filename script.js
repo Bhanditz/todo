@@ -24,7 +24,7 @@ $(document).ready(function() {
 	})
 	$(document).on('click', '.done', function() {
 		$(this).toggleClass('hidden');
-		$(this).parent().addClass('strike');
+		$(this).parent().addClass('strike').delay(1000).fadeOut("slow");
 		listNumber--;
 		$('#number').text(listNumber);
 	})
